@@ -7,17 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <section>
-        <h1>This is a sign-up page</h1>
-
-    </section> -->
     <div class="container">
         <div class="left_side">
            <div class="logo_section">
                 <img class="logo_img" src="./assets/img/logos/odin-lined.png" alt="">
                 <h1 class="logo_text">ODIN</h1>
             </div>
-            <!-- <p class="credit">Photo by Hailey West on Unsplash</p> -->
+            <div class="credit">Photo by <a href="">Hailey West</a> on <a href="">Unsplash</a></div>
         </div>
         <div class="right_side">
             <h6 class="sign_up_text">This is not a real online service! You know you need something <br>
@@ -25,6 +21,43 @@
                 Sign up <em>now</em> to get started. <br>
                 <span class="last_line"> You <em>know</em> you want to.</span> 
             </h6>
+            <form >
+                <h6 class="form_heading"> Let's do this!</h6>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name">
+                        </div>
+                        <div class="form-group">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm_password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm_password">
+                        </div>
+                    </div>
+            </form>
+            <div class="login">
+                <button class="submit_btn">Create Account</button>
+                <p class="login_text">Already have an account? <span><a href="">Log in</a></span></p>
+            </div>
         </div>
     </div>
 </body>
