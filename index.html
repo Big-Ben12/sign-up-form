@@ -21,44 +21,51 @@
                 Sign up <em>now</em> to get started. <br>
                 <span class="last_line"> You <em>know</em> you want to.</span> 
             </h6>
-            <form >
+            <form id="sign-up-form">
                 <h6 class="form_heading"> Let's do this!</h6>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="first_name">FIRST NAME</label>
                             <input type="text" id="first_name">
+                            <span class="error-message" id="error_first_name"></span>
                         </div>
                         <div class="form-group">
                             <label for="last_name">LAST NAME</label>
                             <input type="text" id="last_name">
+                            <span class="error-message" id="error_last_name"></span>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="email">EMAIL</label>
                             <input type="email" id="email">
+                            <span class="error-message" id="error_email"></span>
                         </div>
                         <div class="form-group">
                             <label for="phone">PHONE NUMBER</label>
                             <input type="tel" id="phone">
+                            <span class="error-message" id="error_phone"></span>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="password">PASSWORD</label>
                             <input type="password" id="password">
+                            <span class="error-message" id="error_password"></span>
                         </div>
                         <div class="form-group">
                             <label for="confirm_password">CONFIRM PASSWORD</label>
                             <input type="password" id="confirm_password">
+                            <span class="error-message" id="error_confirm_password"></span>
                         </div>
                     </div>
             </form>
             <div class="login">
-                <button class="submit_btn">Create Account</button>
+                <button class="submit_btn"  id="submit_btn" onclick="validateForm()">Create Account</button>
                 <p class="login_text">Already have an account? <span><a href="">Log in</a></span></p>
             </div>
         </div>
     </div>
+    <script src="script.js"></script> 
 </body>
 </html>
